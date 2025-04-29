@@ -48,5 +48,8 @@ const observador = new IntersectionObserver((entries) => {
         }
     });
 });
-
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+  }
 elements.forEach((element) => observador.observe(element));
