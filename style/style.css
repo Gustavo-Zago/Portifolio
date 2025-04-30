@@ -33,15 +33,39 @@ body{
 }
 
 .nav-link {
+  position: relative;
   color: white;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
+  padding-bottom: 8px; /* espaço para a animação abaixo */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
   color: grey;
 }
+
+.nav-link:hover::after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transform: none;
+  border-radius: 0;
+}
+
 
 .menu-toggle {
   display: none;
