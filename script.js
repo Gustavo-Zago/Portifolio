@@ -1,9 +1,8 @@
-
+//digitar do inicio
 const arrayText = [
     'Olá, Seja Bem-Vindo',
     'Este é o Meu Portifólio',
     'Sou Full-Stack Developer',
-    ''
 ];
 
 const writeSpeed = 50;
@@ -22,7 +21,6 @@ function writeText() {
         setTimeout(removeText, pauseTime);
     }
 }
-
 function removeText() {
     if (indexChar >= 0) {
         elementtext.textContent = arrayText[indexSentence].substring(0, indexChar);
@@ -37,7 +35,8 @@ function removeText() {
     }
 }
 writeText();
-// Observador de elementos com a classe .sla
+
+//aqui começa o blur entrando e saindo
 const elements = document.querySelectorAll('.sla');
 const observador = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -53,3 +52,40 @@ function toggleMenu() {
     menu.classList.toggle("show");
   }
 elements.forEach((element) => observador.observe(element));
+
+const linhasEsquerda = document.querySelectorAll('.linha_esquerda');
+const linhasDireita = document.querySelectorAll('.linha_direita');
+
+function revelarAoScroll_esquerda() {
+  const alturaJanela = window.innerHeight;
+  linhasEsquerda.forEach((linha) => {
+    const topo = linha.getBoundingClientRect().top;
+    if (topo < alturaJanela - 100) {
+      linha.classList.add('visivel');
+    } else {
+      linha.classList.remove('visivel');
+    }
+  });
+}
+
+function revelarAoScroll_direita() {
+  const alturaJanela = window.innerHeight;
+  linhasDireita.forEach((linha) => {
+    const topo = linha.getBoundingClientRect().top;
+    if (topo < alturaJanela - 100) {
+      linha.classList.add('visivel');
+    } else {
+      linha.classList.remove('visivel');
+    }
+  });
+}
+
+window.addEventListener('scroll', () => {
+  revelarAoScroll_esquerda();
+  revelarAoScroll_direita();
+});
+
+window.addEventListener('load', () => {
+  revelarAoScroll_esquerda();
+  revelarAoScroll_direita();
+});
