@@ -5,11 +5,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Gustavo Zago</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="website icon" type="png" href="./img/branco-removebg-preview.png">
+    <link rel="website icon" type="png" href="../img/branco-removebg-preview.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style/style.css'>
     <!--<script src='main.js'></script>-->
 </head>
 <body>
@@ -18,7 +18,7 @@
   <header class="navbar">
     <div class="navbar-logo">
       <a href="/">
-        <img src="img/branco-removebg-preview.png" class="img-homepage" alt="Logo">
+        <img src="../img/branco-removebg-preview.png" class="img-homepage" alt="Logo">
       </a>
     </div>
     <nav class="navbar-links">
@@ -39,31 +39,39 @@
   
 
 <main>
-  <section class="sla painel">
-    <div id="text"></div> 
-  </section>
-  <section>
-    
-<a class="nav-link" href="about.html">
-  <div class="linha_esquerda">Oi, eu sou o Gustavo Zago 👋</div>
-</a>
-<div class="linha_direita">Desenvolvedor apaixonado por tecnologia 💻</div>
-<a class="nav-link" href="/templates/contato.html">
-  <div class="linha_esquerda">Estou à disposição para conversar 📬</div>
-</a>
-<div class="linha_direita">Automatizando ideias ⚙️</div>
-<a class="nav-link" href="portifolio.html">
-  <div class="linha_esquerda">Aqui você vai conhecer um pouco mais sobre meu trabalho 🔍</div>
-</a>
-<div class="linha_direita">Fique à vontade para explorar! 🌐</div>
-<a class="nav-link" href="portifolio.html">
-  <div class="linha_esquerda">Projetos? Alguns. Acordado? Sempre. ☕</div>
-</a>
-<div class="linha_direita">Curioso por natureza, desenvolvedor por paixão 🧠</div>
+    <section class="container mt-5">
+    <h2 class="text-center mb-5" style="font-family: Georgia, serif; background-color: black; color: white;">Entre em Contato</h2>
+    <form>
+        <div class="row mb-3">
+            <label for="firstName" class="form-label">Nome</label>
+            <div class="input-group">
+            <span class="input-group-text"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="Nome" id="firstName">
+            </div>
+        </div>
+
+        <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <div class="input-group">
+            <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
+            <input type="email" class="form-control" placeholder="Email" id="email">
+        </div>
+        </div>
+
+        <div class="mb-3">
+        <label for="message" class="form-label">Mensagem</label>
+        <textarea class="form-control" rows="4" placeholder="Escreva uma mensagem..." id="message"></textarea>
+        </div>
+
+        <div class="text-center">
+        <button type="submit" class="btn btn-dark px-5" style="background-color: black;">Enviar</button>
+        </div>
+    </form>
+    </section>
 
 
-  </section>
 </main>
+
 <footer>
   <div class="footer-section">
     <a class="b" href="https://www.instagram.com/zago_gusta/" target="_blank">
