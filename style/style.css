@@ -101,6 +101,41 @@ body{
   border-radius: 0;
 }
 
+.contato {
+  position: relative;
+  font-family: Georgia, serif;
+  color: black;
+  transition: color 0.3s ease;
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Fundo preto vindo da esquerda */
+.contato::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: black;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+/* Hover: fundo expande e texto fica branco */
+.contato:hover::before {
+  width: 100%;
+}
+
+.contato:hover {
+  color: white;
+}
+
+
 
 .menu-toggle {
   display: none;

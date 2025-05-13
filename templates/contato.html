@@ -40,34 +40,41 @@
 
 <main>
     <section class="container mt-5">
-    <h2 class="text-center mb-5" style="font-family: Georgia, serif; background-color: black; color: white;">Entre em Contato</h2>
-    <form>
-        <div class="row mb-3">
-            <label for="firstName" class="form-label">Nome</label>
-            <div class="input-group">
-            <span class="input-group-text"><i class="fa fa-user"></i></span>
-            <input type="text" class="form-control" placeholder="Nome" id="firstName">
-            </div>
-        </div>
+  <h2 class="text-center mb-5 contato">Entre em Contato</h2>
 
-        <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <div class="input-group">
-            <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-            <input type="email" class="form-control" placeholder="Email" id="email">
-        </div>
-        </div>
+  <form action="https://formsubmit.co/rrgusta@gmail.com" method="POST">
+    
+    <!-- Anti-spam e redirecionamento opcional -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="enviado.html">
 
-        <div class="mb-3">
-        <label for="message" class="form-label">Mensagem</label>
-        <textarea class="form-control" rows="4" placeholder="Escreva uma mensagem..." id="message"></textarea>
-        </div>
+    <div class="mb-3">
+      <label for="firstName" class="contato form-label">Nome</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa fa-user"></i></span>
+        <input type="text" class="form-control" placeholder="Nome" id="firstName" name="name" required>
+      </div>
+    </div>
 
-        <div class="text-center">
-        <button type="submit" class="btn btn-dark px-5" style="background-color: black;">Enviar</button>
-        </div>
-    </form>
-    </section>
+    <div class="mb-3">
+      <label for="email" class="contato form-label">Email</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
+        <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="contato form-label">Mensagem</label>
+      <textarea class="form-control" rows="4" placeholder="Escreva uma mensagem..." id="message" name="message" required></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-dark px-5" style="background-color: black;">Enviar</button>
+    </div>
+
+  </form>
+</section>
 
 
 </main>
