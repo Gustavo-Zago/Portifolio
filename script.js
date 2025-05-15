@@ -84,12 +84,10 @@ function revelarAoScroll_direita() {
 window.addEventListener('scroll', () => {
   revelarAoScroll_esquerda();
   revelarAoScroll_direita();
-  revelarAoScroll_divisao();
 });
 
 window.addEventListener('load', () => {
   revelarAoScroll_esquerda();
   revelarAoScroll_direita();
-  revelarAoScroll_divisao();
 
 });

@@ -17,12 +17,14 @@
 
 
   <header class="navbar">
+
     <div class="navbar-logo">
       <a href="/">
         <img src="../img/branco-removebg-preview.png" class="img-homepage" alt="Logo">
       </a>
     </div>
-    <nav class="navbar-links">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="navbar-links" id="navbarLinks">
       <a class="nav-link" href="/templates/sobre.html">About</a>
       <a class="nav-link" href="/templates/contato.html">Contact</a>
       <a class="nav-link" href="/templates/portifolio.html">Portfólio</a>
@@ -36,9 +38,6 @@
         <i class="fa fa-github"></i> 
       </a>
     </nav>
-    <button class="menu-toggle show" onclick="toggleMenu()">
-      ☰
-    </button>
   </header>
   
 
@@ -112,4 +111,10 @@
 <script src="../sobre.js" defer></script>
 
 </body>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('navbarLinks');
+    menu.classList.toggle('show');
+  }
+</script>
 </html>

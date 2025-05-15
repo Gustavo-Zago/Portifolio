@@ -11,7 +11,6 @@ body{
   min-height: 100vh; 
   margin: 0;
   overflow-x: hidden;
-
 }
   header{
     display: grid;
@@ -169,6 +168,10 @@ body{
     padding: 10px 0;
     border-top: 1px solid #444;
   }
+    .navbar-links.show {
+    display: flex;
+  }
+
 }
     .b {
       color: black; /* Cor inicial do link */

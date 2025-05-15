@@ -15,30 +15,34 @@
 <body>
 
 
-  <header class="navbar">
-    <div class="navbar-logo">
-      <a href="/">
-        <img src="img/branco-removebg-preview.png" class="img-homepage" alt="Logo">
-      </a>
-    </div>
-    <nav class="navbar-links">
-      <a class="nav-link" href="/templates/sobre.html">About</a>
-      <a class="nav-link" href="/templates/contato.html">Contact</a>
-      <a class="nav-link" href="/templates/portifolio.html">Portfólio</a>
-      <a class="nav-link" href="https://www.instagram.com/zago_gusta/" target="_blank">
-        <i class="fa fa-instagram"></i>
-      </a>
-      <a class="nav-link" href="https://www.linkedin.com/in/gustavo-zago-23459526b/" target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a class="nav-link" href="https://www.github.com/Gustavo-Zago/" target="_blank">
-        <i class="fa fa-github"></i> 
-      </a>
-    </nav>
-    <button class="menu-toggle show" onclick="toggleMenu()">
-      ☰
-    </button>
-  </header>
+<header class="navbar">
+  <!-- LOGO -->
+  <div class="navbar-logo">
+    <a href="/">
+      <img src="img/branco-removebg-preview.png" class="img-homepage" alt="Logo">
+    </a>
+  </div>
+
+  <!-- BOTÃO MENU HAMBÚRGUER (visível em telas pequenas) -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- LINKS DO MENU -->
+  <nav class="navbar-links" id="navbarLinks">
+    <a class="nav-link" href="/templates/sobre.html">About</a>
+    <a class="nav-link" href="/templates/contato.html">Contact</a>
+    <a class="nav-link" href="/templates/portifolio.html">Portfólio</a>
+    <a class="nav-link" href="https://www.instagram.com/zago_gusta/" target="_blank">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a class="nav-link" href="https://www.linkedin.com/in/gustavo-zago-23459526b/" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a class="nav-link" href="https://www.github.com/Gustavo-Zago/" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+  </nav>
+</header>
+
   
 
 <main>
@@ -91,4 +95,10 @@
 
 </body>
 <script src="script.js"></script>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('navbarLinks');
+    menu.classList.toggle('show');
+  }
+</script>
 </html>
