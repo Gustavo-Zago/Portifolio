@@ -1,13 +1,18 @@
 .btn-dark{
     background-color: black;
 }
-
 .card {
   transition: transform 0.5s ease, background 0.5s ease;
   position: relative;
   z-index: 0;
   overflow: hidden;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
+}
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
 }
 
 .card:hover {
@@ -20,7 +25,10 @@
     color: black;
   }
 }
-
+.modal-footer,.modal-header{
+    background: black;
+    color: white;
+}
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
