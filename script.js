@@ -34,6 +34,7 @@ function removeText() {
         setTimeout(writeText, pauseTime);
     }
 }
+
 writeText();
 
 //aqui começa o blur entrando e saindo
@@ -83,9 +84,12 @@ function revelarAoScroll_direita() {
 window.addEventListener('scroll', () => {
   revelarAoScroll_esquerda();
   revelarAoScroll_direita();
+  revelarAoScroll_divisao();
 });
 
 window.addEventListener('load', () => {
   revelarAoScroll_esquerda();
   revelarAoScroll_direita();
+  revelarAoScroll_divisao();
+
 });
