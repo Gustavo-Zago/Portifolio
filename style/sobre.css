@@ -45,10 +45,73 @@ main>p {
 }
 
 /* Hover: fundo expande e texto fica branco */
-.titulo:hover::before {
+.titulo.visivel::before {
   width: 100%;
 }
 
-.titulo:hover {
+.titulo.visivel {
   color: white;
+}
+
+.frase {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  color: black;
+  background-color: transparent;
+  border-radius: 1rem;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.6s ease;
+}
+
+/* Quando visível na tela */
+.frase.visivel {
+  background-color: rgba(0, 0, 0, 0.05); /* painel translúcido */
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Efeito hover: aumenta o painel e escurece levemente */
+.frase.visivel:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.15);
+  color: rgb(31, 28, 28);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.lista-personalizada {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.lista-personalizada li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.4;
+}
+
+.lista-personalizada i {
+  color: #333;
+  margin-top: 2px;
+  min-width: 1.2rem;
+  text-align: center;
+}
+.skills-icons i {
+  color: #2c2c2c;
+  transition: transform 0.2s ease;
+}
+
+.skills-icons i:hover {
+  transform: scale(1.2);
+  color: #007bff;
 }
