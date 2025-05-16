@@ -214,6 +214,7 @@ body{
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     main {
+      flex: 1; 
       display: flex;
       flex-direction: column;  /* Garante que elementos fiquem em coluna */
       text-align: center;
