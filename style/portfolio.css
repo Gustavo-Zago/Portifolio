@@ -69,3 +69,14 @@ div > div > div > a > i {
     background-position: 0% 50%;
   }
 }
+@media (max-width: 840px) {
+
+  .card:hover {
+  transform: scale(1.0);
+  background-color: white;
+  color: black;
+}
+  .card{
+  transform: scale(0.8);
+  }
+}
