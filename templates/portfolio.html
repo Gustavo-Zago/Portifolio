@@ -16,17 +16,12 @@
 <body>
 
 <header class="navbar">
-    <!-- LOGO -->
     <div class="navbar-logo">
         <a href="/">
             <img src="../img/branco-removebg-preview.png" class="img-homepage" alt="Logo">
         </a>
     </div>
-
-    <!-- BOTÃO MENU HAMBÚRGUER -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-    <!-- LINKS DO MENU -->
     <nav class="navbar-links" id="navbarLinks">
         <a class="nav-link" href="/templates/sobre.html">About</a>
         <a class="nav-link" href="/templates/contato.html">Contact</a>
@@ -300,7 +295,9 @@
     </div>
 </footer>
 
+<script src="../sobre.js"></script>
 <script src="../script.js"></script>
+
 <script>
     function toggleMenu() {
         const menu = document.getElementById('navbarLinks');

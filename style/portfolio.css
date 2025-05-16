@@ -1,3 +1,7 @@
+h1{
+  text-decoration: underline;
+  margin: 5vw;
+}
 .btn-dark {
   color: black;
   background-color: white;

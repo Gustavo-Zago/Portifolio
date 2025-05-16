@@ -37,15 +37,29 @@ function revelarAoScroll_titulo() {
     }
   });
 }
+const card = document.querySelectorAll('.card');
+function revelarAoScroll_card() {
+  const alturaJanela = window.innerHeight;
+  divisao.forEach((card) => {
+    const topo = card.getBoundingClientRect().top;
+    if (topo < alturaJanela - 100) {
+      card.classList.add('visivel');
+    } else {
+      card.classList.remove('visivel');
+    }
+  });
+}
 window.addEventListener('scroll', () => {
   revelarAoScroll_divisao();
   revelarAoScroll_frase();
   revelarAoScroll_titulo();
+  revelarAoScroll_card();
 });
 
 window.addEventListener('load', () => {
   revelarAoScroll_divisao();
   revelarAoScroll_frase();
   revelarAoScroll_titulo();
+  revelarAoScroll_card();
 
 });
