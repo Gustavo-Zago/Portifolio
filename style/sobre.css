@@ -20,9 +20,13 @@
 main>p {
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
+@font-face {
+  font-family: 'FonteCinemaSunday';
+  src: url('../font/Chevalon-Font/Chevalon-Light.otf') format('truetype');
+}
 .titulo {
   position: relative;
-  font-family: Georgia, serif;
+  font-family: 'FonteCinemaSunday', serif;
   color: black;
   transition: color 0.3s ease;
   display: inline-block;

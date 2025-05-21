@@ -1,7 +1,13 @@
 
-*
-{
-    font-family: Georgia, serif; 
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../font/moms_typewriter/Mom«t___.ttf') format('truetype');
+}
+#text{
+  font-family: 'MinhaFonte', sans-serif;
+}
+* {
+  font-family: 'Roboto Slab', serif;
 }
 html, body{
   height: 100%;

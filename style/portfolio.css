@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'Wondra';
+  src: url('../font/wondra-font/Wondra-yYnJ2.otf') format('truetype');
+}
 h1{
+  font-family: 'Wondra', serif;
   text-decoration: underline;
-  margin: 5vw;
+  margin: 6vw;
+  font-size: 5vw;
 }
 .btn-dark {
   color: black;
