@@ -1,7 +1,7 @@
 //digitar do inicio
 const arrayText = [
     'Olá, Seja Bem-Vindo',
-    'Este é o Meu Portifólio',
+    'Este é o Meu Portfólio',
     'Sou Full-Stack Developer',
 ];
 
@@ -27,7 +27,7 @@ function removeText() {
         indexChar--;
         setTimeout(removeText, writeSpeed);
     } else {
-        indexSentence++; // Corrigido
+        indexSentence++; 
         if (indexSentence >= arrayText.length) {
             indexSentence = 0;
         }
