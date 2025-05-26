@@ -28,9 +28,9 @@
     </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav class="navbar-links" id="navbarLinks">
-      <a class="nav-link" href="/templates/sobre.html">About</a>
-      <a class="nav-link" href="/templates/contato.html">Contact</a>
-      <a class="nav-link" href="/templates/portfolio.html">Portfólio</a>
+      <a class="nav-link" href="sobre.html">About</a>
+      <a class="nav-link" href="contato.html">Contact</a>
+      <a class="nav-link" href="portfolio.html">Portfólio</a>
       <a class="nav-link" href="https://www.instagram.com/zago_gusta/" target="_blank">
         <i class="fa fa-instagram"></i>
       </a>
@@ -51,30 +51,30 @@
   <form action="https://formsubmit.co/rrgusta@gmail.com" method="POST">
 
 
-    <div class="mb-3">
+    <section class="mb-3">
       <label for="firstName" class="contato form-label">Nome</label>
       <div class="input-group">
         <span class="input-group-text"><i class="fa fa-user"></i></span>
         <input type="text" class="form-control" placeholder="Nome" id="firstName" name="name" required>
       </div>
-    </div>
+    </section>
 
-    <div class="mb-3">
+    <section class="mb-3">
       <label for="email" class="contato form-label">Email</label>
       <div class="input-group">
         <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
         <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
       </div>
-    </div>
+    </section>
 
-    <div class="mb-3">
+    <section class="mb-3">
       <label for="message" class="contato form-label">Mensagem</label>
       <textarea class="form-control" rows="4" placeholder="Escreva uma mensagem..." id="message" name="message" required></textarea>
-    </div>
+    </section>
 
-    <div class="text-center">
+    <section class="text-center">
       <button type="submit" class="btn btn-dark px-5" style="background-color: black;">Enviar</button>
-    </div>
+    </section>
 
   </form>
 </section>
@@ -105,7 +105,7 @@
 </footer>
 
 </body>
-<script src="../script.js"></script>
+<script src="../scripts/script.js"></script>
 <script>
   function toggleMenu() {
     const menu = document.getElementById('navbarLinks');
